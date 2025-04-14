@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f9ff;
+        }
+        
+        header {
+            background-image: url('pic.jpg');
+            color: white;
+            padding: 15px;
+            transition: background-color 0.5s ease-in-out;
+        }
+        header:hover {
+            background-color: #005f8a;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            color: #ffdd57;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 50px;
+            border-bottom: 2px solid #ddd;
+            height: 500px;
+            box-sizing: border-box;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+            background-size: cover;
+            background-position: center;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        #home {
+            background-color: #caf0f8;
+            background-image: url('home.jpg');
+        }
+        #about {
+            background-color: #ade8f4;
+            background-image: url('about.jpg');
+        }
+        #services {
+            background-color: #90e0ef;
+            background-image: url('services.jpg');
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .service-box {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 40px;
+            margin: 10px;
+            width: 250px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .service-box:hover {
+            transform: scale(1.1);
+        }
+        .service-box img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 5px;
+        }
+        #bookings {
+            background-color: #48cae4;
+            background-image: url('bookings.jpg');
+        }
+        #contact {
+            background-color: #0096c7;
+            background-image: url('contact.jpg');
+            height: 300px;
+            padding-top: 100px;
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: auto;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+        }
+        button {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005f8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HEALTH HIVE CENTER</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#bookings" class="nav-link">Bookings</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+                
+            </div>
+    </header>
+    
+    <section id="home" class="fade-in">
+        <h2>Welcome to Our Health Care Center</h2>
+        <p>Access expert medical care, telehealth services, and wellness resources—all in one place. At HealthHive, we provide digital healthcare solutions tailored to your needs.</p>
+        <h2>Your Health Our Priority</h2>
+     </section>
+<!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2>About Us</h2>
+        <p>At HealthHive, we are dedicated to providing high-quality healthcare services and reliable medical information to help individuals lead healthier lives. Our mission is to ensure accessible, compassionate, and expert-driven healthcare solutions for everyone.We are a dedicated health care provider offering top-notch medical services.</p>
+        <h4>Who We Are</h4>
+        <p>We are a team of experienced healthcare professionals, doctors, and wellness experts committed to delivering trustworthy health resources, innovative treatments, and patient-centered care. Our platform connects you with the latest medical advancements, expert advice, and wellness programs tailored to your needs.</p>
+        <h4>What We Offer</h4>
+        <p>1.Comprehensive Health Services: From general health checkups to specialized medical treatments.<br>
+            2.Expert Medical Advice: Reliable health information and guidance from certified professionals.<br>
+           3.Wellness & Prevention: Tips on nutrition, fitness, mental well-being, and preventive care.<br>
+            4.Telemedicine & Online Consultations: Convenient access to doctors from the comfort of your home.</p>
+            <h4>Our Commitment</h4>
+            <p>Your health and well-being are our top priorities. We strive to provide accurate, up-to-date information and personalized care to empower you in making informed healthcare decisions.<br>
+
+                📞 Contact Us | 📍 Visit Us | 🌐 [Website URL]</p>
+     </section>
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <img src="checkup.png" alt="General Checkups">
+            <h2>Consulting</h2>
+                <p>Expert guidance for healthcare organizations, improving patient care and digital transformation.</p>
+        </div>
+        <div class="service-box">
+            <img src="consultation.png" alt="Specialist Consultation">
+            <h2>Hospitals</h2>
+                <p>Seamless healthcare access with our network of top-tier hospitals and clinics.</p>
+        </div>
+        <div class="service-box">
+            <img src="emergency.png" alt="Emergency Services">
+            <h2>Nurse & Home Nursing</h2>
+                <p>Certified nurses providing personalized healthcare at home.</p>
+        </div>
+        <div class="service-box">
+            <img src="wellness.png" alt="Wellness Programs">
+            <h2>Medicine</h2>
+            <p>Easy access to prescribed medications and healthcare essentials.</p>
+        </div>
+        <div class="service-box">
+            <img src="wellness.png" alt="Wellness Programs">
+            <h2>Ayurvedic</h2>
+            <p>Natural healing with certified Ayurvedic doctors.</p>
+        </div>
+        <div class="service-box">
+            <img src="wellness.png" alt="Wellness Programs">
+            <h2>Psychiatry</h2>
+            <p>Empowering minds with compassionate care—your trusted partner in mental wellness and psychiatric support.</p>
+        </div>
+    </section>
+    <!-- Bookings Section -->
+    <section id="bookings" class="fade-in">
+        <h2>Book an Appointment</h2>
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2>Contact Us</h2>
+        <p>Email: healthhive@gmail.com</p>
+        <p>Phone: +1234567890</p>
+    </section>
+    
+    <script>
+        document.getElementById("booking-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Your appointment has been booked!");
+        });
+
+        document.addEventListener("scroll", function() {
+            document.querySelectorAll("section").forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 50) {
+                    section.classList.add("visible");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
